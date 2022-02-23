@@ -1,0 +1,211 @@
+<!-- This is an HTML comment -->
+
+<!-- This comment
+     like the CSS one
+     can wrap multiple lines -->
+
+<!--
+
+    Instructions: Pick a topic of something you like or admire. It can be a person, amovie book, place you want to travel etc..
+    Replace all of the copy and imagery that I have in this template of "The Blum" with you choice of content.
+
+    You can change the styling however you like, I do ask that you make changes to the CSS in at least 3 different ways. It shoulnd't come back
+    looking exactly like mine does now. Fonts, Font-Sizes, Colors, Margins, Paddings etc..
+
+    The content in this doc is the minimum for Full Credit. If you choose to add more rows, or content. Great! Have fun with it.
+
+    The more you put into it, the more you'll get out of it.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta data has many many uses, here were using it to the browser the charset, what to do with the viewport -->
+        <meta charset="UTF-8" />
+        <!-- This gives the browser instructions on how to control the page's dimensions and scaling. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- The title tag is the text you see in the tab of the browser -->
+        <title>Learning Breakpoints</title>
+
+        <!-- this is the reference to our stylguide -->
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <!-- Max width of the Content 1024 -->
+        <main class="container">
+            <!-- Nav Section -->
+            <section class="nav-wrapper">
+                <!-- rows HAVE to be inside a container and a parent to the column. This clears the FLOATS of the columns -->
+                <div class="row">
+                    <!-- The grid is on a 12 col grid so col-12 is a full width section col-6 50% and and so on -->
+                    <div class="col-12">
+                        <header class="nav-header container">
+                            <div class="logo-container">
+                                <!-- Just leave this image here for the logo, we're not in Mr. Allen's class lol...unless you want to. -->
+                                <img src="./img/logo-placeholder-image.png" alt="My Logo" width="100px" />
+                            </div>
+                            <!-- Start Nav -->
+                            <nav class="main-nav">
+                            <img src="./img/hamburger-menu.png" alt="Hamburger Menu" />
+                                <!-- unordered list -->
+                                <ul>
+                                    <!-- List Item -->
+                                    <li>
+                                        <!-- Anchor tag, and/or link -->
+                                        <a href="#" >home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" >about jeff</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" >cinema</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" >resources</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" >contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </header>
+                    </div>
+                </div>
+            </section>
+            <!-- END Nav -->
+
+            <!-- Hero Section -->
+            <section class="hero-wrapper">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="./img/jeff-goldblum.jpg" alt="Jeff Goldnlum" />
+                    </div>
+                    <div class="col-6">
+                        <!-- Main headline : there should only ever be one H1 on any page...but there should always be on every page -->
+                        <h1>Hey! It's Jeff</h1>
+                        <!-- paragraph tag for copy -->
+                        <p class="quote">"God help us we're in the hands of engineers." <span class="cite">-- Jeff Goldblum</p>
+                        <a href="https://www.strathmore.org/what-s-on/21-22-strathmore-season/jeff-goldblum-the-mildred-snitzer-orchestra/" target="_blank" class="btn btn-blue btn-lrg">learn more</a>
+                    </div>
+                </div>
+            </section>
+            <!-- END Hero Section -->
+
+            <!-- Detail Section Home -->
+            <section class="detail-wrapper">
+                <div class="row detail-row">
+                    <!-- The two col-6 means a 2 column grid -->
+                    <div class="col-6">
+                        <!-- Replace all content between the h2 and p tags with a detail about your topic -->
+                        <!-- H2-H6 can have multiple instances of them on any given page -->
+                        <h2>The Blum</h2>
+                        <p>God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!</p>
+                    </div>
+                    <div class="col-6">
+                        <!-- Replace this image with one from your topic. Place either a http link or a downloaded link, if you
+                             follow that path, you'll need to use a RELATIVE PATH i.e. ../img/my-image.png" Also don't forget the alt tag -->
+                        <img src="./img/methode_sundaytimes_prod_web_bin_cbcdfa0a-9005-11e8-86ee-e22d14bef8b7.jpg" alt="Jeff Golblum" />
+                    </div>
+                </div>
+                <div class="row detail-row">
+                    <div class="col-12 container">
+                        <h3>A Talented and Unique Actor</h3>
+                        <p>Hey, take a look at the earthlings. Goodbye! Yeah, but your scientists were so preoccupied with whether or not they could, they didn't stop to think if they should. Did he just throw my cat out of the window? I gave it a cold? I gave it a virus. A computer virus.</p>
+                    </div>
+                </div>
+                <div class="row detail-row">
+                    <div class="col-6">
+                        <!-- Replace this image with one from your topic. Place either a http link or a downloaded link, if you
+                             follow that path, you'll need to use a RELATIVE PATH i.e. ../img/my-image.png" Also don't forget the alt tag -->
+                        <img src="./img/jeffgoldblum-20180629-losangeles-universalmusic-paridukovic-usage3-shot-07-612.jpg" alt="Jeff Golblum" />
+                    </div>
+                    <div class="col-6">
+                        <!-- Replace all content between the h2 and p tags with a detail about your topic -->
+                        <h2>The Blum</h2>
+                        <p>God creates dinosaurs. God destroys dinosaurs. God creates Man. Man destroys God. Man creates Dinosaurs. We gotta burn the rain forest, dump toxic waste, pollute the air, and rip up the OZONE! 'Cause maybe if we screw up this planet enough, they won't want it anymore!</p>
+                    </div>
+                </div>
+            </section>
+            <!-- END Detail Section Home -->
+
+            <!-- Full Bleed Img Bg -->
+            <!-- there is a fun little CSS trick that allows certain elements like this to break out of the parent container check
+                 out the full-bleed css class and look at the margin calc style -->
+            <section class="full-bleed">
+                <h4>Even if I don't have a job, I work on plays and scenes. <span>--Jeff Goldblum</span></h4> <!-- Span tags are inline elements not block elements They can be 
+                                                                                                                   forced into a block status however...sometimes useful -->
+            </section>
+            <!-- END Full Bleed Img Bg -->
+
+            <!-- Highlights -->
+            <section>
+                <div class="row">
+                    <div class="col-6 highlights">
+                        <h5>Awards and Accoldaes</h5>
+                        <ul>
+                            <li>1987 Saturn Awards, Winner of Best Actor for The Fly</li>
+                            <li>1997 Saturn Awards, Winner of Best Actor for Independence Day</li>
+                            <li>2015 Winner of the COFCA Award</li>
+                            <li>etc..</li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <img src="./img/wajg-icecream-9_3230e604-scaled.jpeg" alt="Jeff Goldblum" />
+                    </div>
+                </div>
+            </section>
+            <!-- END Highlights -->
+
+            <!-- Footer -->
+            <footer>
+            <div class="row container">
+                <div class="col-6">
+                    <ul>
+                        <li>
+                            <a href="#" >home</a>
+                        </li>
+                        <li>
+                            <a href="#" >about jeff</a>
+                        </li>
+                        <li>
+                            <a href="#" >cinema</a>
+                        </li>
+                        <li>
+                            <a href="#" >resources</a>
+                        </li>
+                        <li>
+                            <a href="#" >contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li>
+                            <a href="#" >privacy policy</a>
+                        </li>
+                        <li>
+                            <a href="#" >terms of use</a>
+                        </li>
+                        <li>
+                            <a href="#" >anyone reading this</a>
+                        </li>
+                        <li>
+                            <a href="#" >legal</a>
+                        </li>
+                        <li>
+                            <a href="#" >cookie policy</a>
+                        </li>
+                        <li style="color:white; font-size: 10px; margin-top: 30px;">
+                            Copyright &copy; 2022 Mr. Ramage <!-- &copy is an html entity, there are a ton of these and highly recommend learning them i.e. &trade;, &reg; &amp; -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+                
+            </footer>
+            <!-- END -->
+
+        </main>
+    </body>
+</html>
