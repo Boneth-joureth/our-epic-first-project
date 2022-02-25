@@ -1,0 +1,499 @@
+/* This is a single line comment in CSS */
+
+/*  It can 
+	also be a multiple
+	line comment
+*/
+
+.container {
+  margin: 0 auto; /* this is a css trick to center block level objects */
+  max-width: 1024px; /* this is a fairly outdated max-width standard is 1440 now, you can alter this is you like */
+}
+
+/*  this is called a clearfix 
+    When you float an object, like the col's, it takes them out of
+    box model. Meaning they will, "float" over other objects"
+    the clearfix, essentially wraps them and keeps them where they
+    should be in the layout, while allowing the columns to still side next to each other */
+.row {
+  *zoom: 1;
+}
+
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.col-1 {
+  width: 6.38021%;
+  position: relative;
+  float: left;
+  margin: 0 0.97656%;
+  padding: 0 0.97656%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.col-2 {
+  width: 14.71354%;
+  position: relative;
+  float: left;
+  margin: 0 0.97656%;
+  padding: 0 0.97656%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.col-3 {
+  width: 23.04688%;
+  position: relative;
+  float: left;
+  margin: 0 0.97656%;
+  padding: 0 0.97656%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.col-4 {
+  width: 31.38021%;
+  position: relative;
+  float: left;
+  margin: 0 0.97656%;
+  padding: 0 0.97656%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.col-5 {
+  width: 39.71354%;
+  position: relative;
+  float: left;
+  margin: 0 0.97656%;
+  padding: 0 0.97656%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.col-6 {
+  width: 48.04688%;
+  position: relative;
+  float: left;
+  margin: 0 0.97656%;
+  padding: 0 0.97656%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.col-7 {
+  width: 56.38021%;
+  position: relative;
+  float: left;
+  margin: 0 0.97656%;
+  padding: 0 0.97656%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.col-8 {
+  width: 64.71354%;
+  position: relative;
+  float: left;
+  margin: 0 0.97656%;
+  padding: 0 0.97656%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.col-9 {
+  width: 73.04688%;
+  position: relative;
+  float: left;
+  margin: 0 0.97656%;
+  padding: 0 0.97656%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.col-10 {
+  width: 81.38021%;
+  position: relative;
+  float: left;
+  margin: 0 0.97656%;
+  padding: 0 0.97656%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.col-11 {
+  width: 89.71354%;
+  position: relative;
+  float: left;
+  margin: 0 0.97656%;
+  padding: 0 0.97656%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.col-12 {
+  width: 98.04688%;
+  position: relative;
+  float: left;
+  margin: 0 0.97656%;
+  padding: 0 0.97656%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  font: Arial, Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+  margin-top:0;
+  padding-top: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p, li {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px	;
+	line-height: 1.;
+}
+
+html {
+  height: 100%;
+}
+
+iframe[name="redirect_container"] {
+  display: none;
+}
+
+iframe {
+  width: 100%;
+  overflow: hidden;
+}
+
+img {
+  border: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+section {
+	margin-bottom: 150px !important;
+}
+
+.detail-row {
+	margin-bottom: 80px;
+}
+
+/* nth-child is a powerful selector that can allow to to target elements in a numerous amount of ways.
+   Too numerous for the purposes of this exercise, but you can see the basic below */
+.detail-row:nth-child(even) {
+	background: #3789a9;
+	padding: 50px;
+	border-radius: 20px;
+	color: #f5f5f5;
+	text-align: center;
+ }
+
+.detail-row:nth-child(even) h3 {
+	font-size: 36px;
+ }
+
+.nav-wrapper {
+	margin:1em calc(50% - 50vw); /* Breaking out of the parent element. Very handy little trick */ 
+	background-color: #333;
+	margin-bottom: 0 !important; /* the !important flag creates a hierarchy and will overwrite the margin-bottom of the previouly declared statement */
+}
+
+.nav-header {
+	overflow: hidden; /* This is yet another way to clear the floats of a floated element. For it to work, like row it must be 
+                       applied to the parent of the floated children. */
+}
+
+.logo-container img {
+	width: 100%;
+	max-width: 100px;
+	float: left;
+	position: absolute; /* This will also remove the element from the box model, it will bubble up to the neearest element that is has position relative.
+                         Flyout navs use position absolute in every case I have ever seen it. They can be a pain...trust me. */
+}
+
+.main-nav {
+	overflow: hidden;
+	margin-top: 2%;
+}
+
+.main-nav ul {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 0;
+	float: right;
+}
+
+.main-nav ul li {
+	display: inline-block;
+	margin: 0 10px;
+}
+
+.main-nav ul li a {
+	color: #fff;
+	text-transform: uppercase;
+	transition: color 0.5s ease-out;
+}
+
+.main-nav ul li a:hover {
+	color: #4bc27d;
+}
+
+.hero-wrapper {
+	margin-top: 0 !important;
+	padding: 60px;
+	background: #606060;
+	margin:1em calc(50% - 50vw);
+}
+
+.hero-wrapper img {
+	border-bottom-left-radius: 50px;
+	border-top-left-radius: 50px;
+}
+
+.hero-wrapper h1 {
+	color: #f5f5f5;
+	font-size: 48px;
+}
+
+.hero-wrapper p {
+	color: #f5f5f5;
+	margin-bottom: 90px;
+}
+
+.btn {
+	padding: 10px 40px;
+	background: white;
+	color: #333;
+	box-shadow: none;
+	border: none;
+	outline: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	transition: opacity 0.5s ease;
+	cursor: pointer;
+}
+
+/* This tells btn, that on hover. Do this. to get the animation you have to put the transiton on .btn */
+.btn:hover { 
+	opacity: 0.7;
+}
+
+.btn-blue {
+	background: #3789a9;
+	color: white;
+}
+
+.quote {
+	font-size: 24px;
+	font-style: italic;
+}
+
+.full-bleed {
+	padding: 200px;
+	margin:1em calc(50% - 50vw);
+	background: url("../img/independence-day-resurgence-jeff-goldblum-slice.jpg") no-repeat;
+	background-size: cover;
+	position: relative;
+	color: white;
+}
+
+/* this is a pseudo element it "creates" an html like element that you can manipulate
+   I use this ALL THE TIME. It is incredibly powerful when making complex layouts. 
+   There is also a ::before. BEWARE, you CANNOT target these with JavaScript, JS doesn't know they exist. */
+.full-bleed::after {
+	content: ""; /* this HAS to be here for it to work */
+	display: block;
+	background-color: black;
+	opacity: 0.7;
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100%;
+}
+
+.full-bleed h4 {
+	position: relative;
+	z-index: 3;
+	color: white;
+	font-size: 60px;
+	text-align: center;
+}
+
+.full-bleed h4 span {
+	display: block;
+	font-size: 40px;
+	margin-top: 30px;
+}
+
+.highlights h5 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.highlights ul {
+	padding-left: 0;
+	list-style: none;
+}
+
+.highlights ul li {
+	margin-bottom: 15px;
+}
+
+footer {
+	margin:1em calc(50% - 50vw);
+	background-color: #3789a9;
+	padding: 45px 0;
+}
+
+.main-nav img {
+	display: none;
+}
+
+footer ul {
+	padding-left: 0;
+}
+
+footer ul li {
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+footer ul li a {
+	color: white;
+	text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1024px) {
+    .hero-wrapper p {
+    	margin-bottom: 40px;
+    }
+    .quote {
+    	font-size: 18px;
+    }
+    .hero-wrapper h1 {
+    	font-size: 36px;
+    }
+    section {
+    	margin-bottom: 50px !important;
+    }
+    p,li {
+    	font-size: 16px;
+    }
+    .detail-row:nth-child(even) {
+		padding: 30px;
+		margin: 20px;
+    }
+    .full-bleed {
+    	padding: 40px;
+    }
+    .full-bleed h4 {
+    	font-size: 20px;
+    	width: 50%;
+    	margin: auto;
+    }
+    .full-bleed h4 span {
+    	font-size: 20px;
+    }
+    footer {
+    	padding: 45px;
+    }
+    footer .container div:first-child ul {
+    	text-align: right;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+    padding: 0;
+    float: none;
+    margin: 0;
+  }
+  .container {
+  	overflow: hidden;
+  }
+  .nav-wrapper {
+  	margin:initial !important;
+  }
+  .hero-wrapper img {
+  	border-radius: 50px;
+  }
+  .logo-container img {
+  	top: 10px;
+  	left: 20px;
+  }
+  .main-nav {
+  	background-color: #3789a9;
+  	margin-top: 0;
+  	padding: 5px;
+  }
+  .main-nav ul {
+  	display: none;
+  }
+  .main-nav img {
+  	display: block;
+  	max-width: 50px;
+  	float: right;
+  	margin-right: 30px;
+  	margin-top: 5pxpx;
+  }
+  .hero-wrapper h1 {
+  	margin-top: 20px;
+  }
+  .detail-wrapper {
+  	padding: 0 20px;
+  }
+  .detail-wrapper .detail-row:first-child {
+  	margin-bottom: 20px;
+  }
+  .detail-wrapper .detail-row:last-child div h2 {
+  	margin-top: 20px;
+  }
+  .highlights {
+  	padding: 0 20px;
+  }
+  footer .container div:first-child ul {
+  	text-align: center;
+  }
+  footer ul {
+  	text-align: center;
+  }
+}
